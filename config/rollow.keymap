@@ -30,7 +30,7 @@
  *      |         |          |          |          |          |              |          |          |          |          |          |
  *      -------------------------------------------------------              --------------------------------------------------------
  *                           |    NUM   |   BSP    |   TAB    |              |    -     |  Space   |  Enter   |
- *                           |----------|   SYM    |  Shift   |              |   Arr    |   NAV    |----------|
+ *                           |----------|   SYM    |   NUM    |              |   Arr    |   NAV    |----------|
  *                           |    Up    |---------------------'              `---------------------|  Right   |
  *                           |   Down   |                                                          |  Left    |
  *                           `----------'                                                          `----------'
@@ -39,7 +39,7 @@
         CTL_Q      ALT_W      CMD_F      &kp P      &kp G                 &kp J      &kp L      CMD_U      ALT_Y      CTL_SEMI
         &kp A      &kp R      &kp S      SFT_T      &kp D                 &kp H      SFT_N      &kp E      &kp I      &kp O
         &kp Z      &kp X      &kp C      &kp V      &kp B                 &kp K      &kp M      &kp COMMA  &kp DOT    &kp SQT
-                              ESC_NUM    SYM_BSP    TAB_SFT               MIN_ARR    SPC_NAV    ENT_THU
+                              ESC_NUM    SYM_BSP    TAB_NUM               MIN_ARR    SPC_NAV    ENT_THU
                         >;
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
@@ -59,7 +59,7 @@
         &none      &none      &none      &none      &none                 &kp COLON  &kp N7     &kp N8     &kp N9     &kp N0 
         &none      N_CUT      N_COPY     N_PASTE    S_PASTE               &kp DOT    &kp N4     &kp N5     &kp N6     &kp FSLH 
         &none      &none      &kp MINUS  &kp EQUAL  &none                 &kp PLUS   &kp N1     &kp N2     &kp N3     &kp ASTRK
-                              &trans     &trans     &trans                &trans     &trans     &trans
+                              &trans     &trans     &trans                &trans     &kp N0     &trans
                         >;
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
