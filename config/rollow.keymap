@@ -65,4 +65,15 @@
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };
         };
+
+                arr_layer {
+                        bindings = <
+        ARR_1_6    ARR_2_6    FULLSCR    ARR_5_6    ARR_6_6               &none      TOP_LEFT   TOP_1_2    TOP_RIGHT  &none
+        LEFT_1_3   LEFT_2_3   MID_1_3    RIGHT_2_3  RIGHT_1_3             P_SCREEN   LEFT_1_2   BOT_1_2    RIGHT_1_2  N_SCRREN
+        LEFT_5_6   ARR_3_6    CENTRE     ARR_4_6    RIGHT_5_6             &none      BOT_LEFT   RESTORE    BOT_RIGHT  &none
+                              &trans     &trans     &trans                &trans     &trans     &trans
+                        >;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
+                };
+        };
 };

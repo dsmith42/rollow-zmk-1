@@ -6,6 +6,7 @@
 #define NUM 2
 #define ACC 3
 #define NAV 4
+#define ARR 5
 
 // Home modifiers
 #define CTL_Q &hm_qsemi LCTRL Q
@@ -56,3 +57,38 @@
 #define BT3 &bt BT_SEL 3 
 #define BT4 &bt BT_SEL 4 
 #define BT_CLEAR &bt BT_CLR
+
+// Arrange
+// 1/3s
+#define LEFT_1_3 &kp LC(LA(D))
+#define MID_1_3 &kp LC(LA(F))
+#define RIGHT_1_3 &kp LC(LA(G))
+// 2/3s
+#define LEFT_2_3 &kp LC(LA(E))
+#define RIGHT_2_3 &kp LC(LA(T))
+// 1/6s
+#define ARR_1_6 &kp LC(LA(N1))
+#define ARR_2_6 &kp LC(LA(N2))
+#define ARR_3_6 &kp LC(LA(N3))
+#define ARR_4_6 &kp LC(LA(N4))
+#define ARR_5_6 &kp LC(LA(N5))
+#define ARR_6_6 &kp LC(LA(N6))
+// 5/6s
+#define LEFT_5_6 &kp LC(LA(COMMA))
+#define RIGHT_5_6 &kp LC(LA(DOT))
+// 1/2s
+#define LEFT_1_2 &kp LC(LA(LEFT))
+#define RIGHT_1_2 &kp LC(LA(RIGHT))
+#define TOP_1_2 &kp LC(LA(UP))
+#define BOT_1_2 &kp LC(LA(DOWN))
+// 1/4s
+#define TOP_LEFT &kp LC(LA(U))
+#define TOP_RIGHT &kp LC(LA(I))
+#define BOT_LEFT &kp LC(LA(J))
+#define BOT_RIGHT &kp LC(LA(K))
+// Other
+#define FULLSCR &kp LC(LA(ENTER))
+#define CENTRE &kp LC(LA(C))
+#define P_SCREEN &kp LC(LA(LG(LEFT)))
+#define N_SCREEN &kp LC(LA(LG(RIGHT)))
+#define RESTORE &kp LC(LA(BSPC))
