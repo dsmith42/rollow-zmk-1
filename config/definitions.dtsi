@@ -4,9 +4,8 @@
 #define MAIN 0
 #define SYM 1
 #define NUM 2
-#define ACC 3
-#define NAV 4
-#define ARR 5
+#define NAV 3
+#define ARR 4
 
 // Home modifiers
 #define CTL_Q &hm_qsemi LCTRL Q
@@ -22,9 +21,9 @@
 #define ESC_NUM &th_ht NUM ESC
 #define SYM_BSP &th_ht SYM BSPC
 #define TAB_SFT &th_ht LSHFT TAB
-#define MIN_ARR &th_ht ACC MINUS
+#define MIN_ARR &th_ht ARR MINUS
 #define SPC_NAV &th_ht NAV SPACE
-#define ENT_THU &th_ht ACC ENTER
+#define ENT_THU &th_ht ARR ENTER
 
 // Nav shortcuts
 #define P_HIST &kp LG(RBKT)

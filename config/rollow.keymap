@@ -18,49 +18,40 @@
 
                 default_layer {
                         bindings = <
-        CTL_Q     ALT_W     CMD_F     &kp P     &kp G             &kp J     &kp L     CMD_U     ALT_Y     CTL_SEMI
-        &kp A     &kp R     &kp S     SFT_T     &kp D             &kp H     SFT_N     &kp E     &kp I     &kp O
-        &kp Z     &kp X     &kp C     &kp V     &kp B             &kp K     &kp M     &kp COMMA &kp DOT   &kp SQT
-                            ESC_NUM   SYM_BSP   TAB_SFT           MIN_ARR   SPC_NAV   ENT_THU
+        CTL_Q      ALT_W      CMD_F      &kp P      &kp G                 &kp J      &kp L      CMD_U      ALT_Y      CTL_SEMI
+        &kp A      &kp R      &kp S      SFT_T      &kp D                 &kp H      SFT_N      &kp E      &kp I      &kp O
+        &kp Z      &kp X      &kp C      &kp V      &kp B                 &kp K      &kp M      &kp COMMA  &kp DOT    &kp SQT
+                              ESC_NUM    SYM_BSP    TAB_SFT               MIN_ARR   SPC_NAV   ENT_THU
                                                  >;
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
                 
                 sym_layer {
                         bindings = <
-        &kp EXCL  &kp AT    &kp ASTRK &kp AMPS  &kp PIPE          &kp PIPE  &kp LBKT  &kp CARET &kp RBKT  &kp COLON
-        &kp TILDE &kp LT    &kp PRCNT &kp GT    &kp LA(N3)        &kp QMARK &kp LPAR  &kp DLLR  &kp RPAR  &kp FSLH
-        &kp GRAVE &kp PLUS  &none     &kp EQUAL &kp LA(LS(N2))    &kp PLUS  &kp LBRC  &kp HASH  &kp RBRC  &kp BSLH
-                            ESC_NUM   SYM_BSP   TAB_SFT           MIN_ARR   SPC_NAV   ENT_THU   
+        &kp EXCL   &kp AT     &kp ASTRK  &kp AMPS   &kp PIPE              &kp PIPE   &kp LBKT   &kp CARET  &kp RBKT   &kp COLON
+        &kp TILDE  &kp LT     &kp PRCNT  &kp GT     &kp LA(N3)            &kp QMARK  &kp LPAR   &kp DLLR   &kp RPAR   &kp FSLH
+        &kp GRAVE  &kp PLUS   &none      &kp EQUAL  &kp LA(LS(N2))        &kp PLUS   &kp LBRC   &kp HASH   &kp RBRC   &kp BSLH
+                              ESC_NUM    SYM_BSP    TAB_SFT               MIN_ARR    SPC_NAV    ENT_THU   
                         >;
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
                 num_layer {
                         bindings = <
-        &none     &none     &none     &none     &none             &kp COLON &kp N7    &kp N8    &kp N9    &kp N0 
-        &none     CUT       COPY      PASTE     S_PASTE           &kp DOT   &kp N4    &kp N5    &kp N6    &kp FSLH 
-        &none     &none     &none     &none     &none             &kp PLUS  &kp N1    &kp N2    &kp N3    &kp ASTRK
-                            &trans    &trans    &trans            &trans    &trans    &trans
+        &none      &none      &none      &none      &none                 &kp COLON  &kp N7     &kp N8     &kp N9     &kp N0 
+        &none      CUT        COPY       PASTE      S_PASTE               &kp DOT    &kp N4     &kp N5     &kp N6     &kp FSLH 
+        &none      &none      &none      &none      &none                 &kp PLUS   &kp N1     &kp N2     &kp N3     &kp ASTRK
+                              &trans     &trans     &trans                &trans     &trans     &trans
                         >;
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
-                accents_layer {
-                        bindings = <
-   &a_cir   &trans   &e_aig   &e_grv   &trans   &dead_uml   &u_grv   &i_cir   &o_cir   &trans
-   &a_grv   &trans   &e_cir   &trans   &trans   &dead_cir   &u_cir   &i_uml   &o_uml   &trans
-   &trans   &trans   &c_ced   &trans   &trans   &trans      &trans   &trans   &trans   &trans
-                     &trans   &trans   &trans   &trans      &trans   &trans
-                        >;
-                };
-
                 nav_layer {
                         bindings = <
-        BT0       BT1       BT2       BT3       BT_CLEAR          &none     &kp HOME  &kp UP    &kp END   &none
-        &none     CUT       COPY      PASTE     S_PASTE           &none     &kp LEFT  &kp DOWN  &kp RIGHT &none
-        &none     &none     SCR_CAP   &none     &none             P_HIST    P_TAB     N_WIND    N_TAB     N_HIST
-                            &kp C_MUTE  &kp DEL &trans            &trans    &trans    &trans
+        BT0        BT1        BT2        BT3        BT_CLEAR              &none      &kp HOME   &kp UP     &kp END    &none
+        &none      CUT        COPY       PASTE      S_PASTE               &none      &kp LEFT   &kp DOWN   &kp RIGHT  &none
+        &none      &none      SCR_CAP    &none      &none                 P_HIST     P_TAB      N_WIND     N_TAB      N_HIST
+                              &kp C_MUTE &kp DEL    &trans                &trans     &trans     &trans
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };
