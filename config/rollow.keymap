@@ -28,7 +28,7 @@
                 
                 sym_layer {
                         bindings = <
-        &kp EXCL  &kp AT    &kp ASTRK &kp AMP   &kp PIPE          &kp PIPE  &kp LBKT  &kp CARET &kp RBKT  &kp COLON
+        &kp EXCL  &kp AT    &kp ASTRK &kp AMPS  &kp PIPE          &kp PIPE  &kp LBKT  &kp CARET &kp RBKT  &kp COLON
         &kp TILDE &kp LT    &kp PRCNT &kp GT    &kp LA(N3)        &kp QMARK &kp LPAR  &kp DLLR  &kp RPAR  &kp FSLH
         &kp GRAVE &kp PLUS  &none     &kp EQUAL &kp LA(LS(N2))    &kp PLUS  &kp LBRC  &kp HASH  &kp RBRC  &kp BSLH
                             ESC_NUM   SYM_BSP   TAB_SFT           MIN_ARR   SPC_NAV   ENT_THU   
