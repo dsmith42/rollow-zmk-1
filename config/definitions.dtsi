@@ -1,9 +1,19 @@
+#include homerow.dtsi
+
 // layers
 #define MAIN 0
 #define SYM 1
 #define NUM 2
 #define ACC 3
 #define NAV 4
+
+// layer shortcuts
+#define ESC_NUM &th_ht NUM ESC
+#define SYM_BSP &th_ht SYM BSPC
+#define TAB_SFT &th_ht LSHFT TAB
+#define MIN_ARR &th_ht ACC MINUS
+#define SPC_NAV &th_ht NAV SPACE
+#define ENT_THU &th_ht ACC ENTER
 
 //homerow
 #define HM_A &hm_asemi LGUI A
