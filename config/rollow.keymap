@@ -18,6 +18,24 @@
 
                 default_layer {
                         bindings = <
+/**
+ *      ,-----------------------------------------------------.              .------------------------------------------------------.
+ *      |   Q     |    W     |    F     |    P     |    G     |              |    J     |    L     |    U     |    Y     |    ;     |
+ *      |  CTL    |   ALT    |   CMD    |          |          |              |          |          |   CTL    |   ALT    |   CMD    |
+ *      -------------------------------------------------------              --------------------------------------------------------
+ *      |   A     |    R     |    S     |    T     |    D     |              |    H     |    N     |    E     |    I     |    O     |
+ *      |         |          |          |  Shift   |          |              |          |  Shift   |          |          |          |
+ *      -------------------------------------------------------              --------------------------------------------------------
+ *      |   Z     |    X     |    C     |    V     |    B     |              |    K     |    M     |    ,     |    .     |    '     |
+ *      |         |          |          |          |          |              |          |          |          |          |          |
+ *      -------------------------------------------------------              --------------------------------------------------------
+ *                           |    NUM   |   BSP    |   TAB    |              |    -     |  Space   |  Enter   |
+ *                           |----------|   SYM    |  Shift   |              |   Arr    |   NAV    |----------|
+ *                           |    Up    |---------------------'              `---------------------|  Right   |
+ *                           |   Down   |                                                          |  Left    |
+ *                           `----------'                                                          `----------'
+ **/
+
         CTL_Q      ALT_W      CMD_F      &kp P      &kp G                 &kp J      &kp L      CMD_U      ALT_Y      CTL_SEMI
         &kp A      &kp R      &kp S      SFT_T      &kp D                 &kp H      SFT_N      &kp E      &kp I      &kp O
         &kp Z      &kp X      &kp C      &kp V      &kp B                 &kp K      &kp M      &kp COMMA  &kp DOT    &kp SQT
@@ -43,13 +61,13 @@
         &none      &none      &kp MINUS  &kp EQUAL  &none                 &kp PLUS   &kp N1     &kp N2     &kp N3     &kp ASTRK
                               &trans     &trans     &trans                &trans     &trans     &trans
                         >;
-                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp PG_UP PG_DN>;
+                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
                 nav_layer {
                         bindings = <
-        BT0        BT1        BT2        BT3        BT_CLEAR              &none      &kp HOME   &kp UP     &kp END    ZOOM_MIC
-        &none      N_CUT      N_COPY     N_PASTE    S_PASTE               &none      &kp LEFT   &kp DOWN   &kp RIGHT  ZOOM_VID
+        BT0        BT1        BT2        BT3        BT_CLEAR              ZOOM_MIC   &kp HOME   &kp UP     &kp END    &trans
+        &none      N_CUT      N_COPY     N_PASTE    S_PASTE               ZOOM_VID   &kp LEFT   &kp DOWN   &kp RIGHT  &trans
         &none      &none      SCR_CAP    &none      &none                 P_HIST     P_TAB      N_WIND     N_TAB      N_HIST
                               &kp C_MUTE &kp DEL    &trans                &trans     &trans     &trans
                         >;
