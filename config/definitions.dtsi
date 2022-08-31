@@ -1,4 +1,4 @@
-#include homerow.dtsi
+#include "homerow.dtsi"
 
 // layers
 #define MAIN 0
