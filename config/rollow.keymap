@@ -69,7 +69,7 @@
                 thu_layer {
                         bindings = <
         &trans     &trans     &trans     &trans     &trans                &trans     INPUT_LANG &trans     &trans     TXT_PLUS
-        &trans     &trans     &trans     &trans     &trans                &trans     &trans     EMOJI      &trans     TXT_MINUS
+        &trans     &trans     &trans     &trans     &trans                &trans     &kp CAPS   EMOJI      &trans     TXT_MINUS
         &trans     &trans     &trans     &trans     &trans                &trans     &trans     &trans     &trans     &trans
                               &trans     &trans     &trans                &trans     &trans     &trans
                         >;
