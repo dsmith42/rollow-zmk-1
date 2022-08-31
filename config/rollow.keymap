@@ -21,7 +21,7 @@
         CTL_Q      ALT_W      CMD_F      &kp P      &kp G                 &kp J      &kp L      CMD_U      ALT_Y      CTL_SEMI
         &kp A      &kp R      &kp S      SFT_T      &kp D                 &kp H      SFT_N      &kp E      &kp I      &kp O
         &kp Z      &kp X      &kp C      &kp V      &kp B                 &kp K      &kp M      &kp COMMA  &kp DOT    &kp SQT
-                              ESC_NUM    SYM_BSP    TAB_SFT               MIN_ARR   SPC_NAV   ENT_THU
+                              ESC_NUM    SYM_BSP    TAB_SFT               MIN_ARR    SPC_NAV    ENT_THU
                         >;
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
@@ -30,8 +30,8 @@
                         bindings = <
         &kp EXCL   &kp AT     &kp ASTRK  &kp AMPS   &kp PIPE              &kp PIPE   &kp LBKT   &kp CARET  &kp RBKT   &kp COLON
         &kp TILDE  &kp LT     &kp PRCNT  &kp GT     &kp LA(N3)            &kp QMARK  &kp LPAR   &kp DLLR   &kp RPAR   &kp FSLH
-        &kp GRAVE  &kp PLUS   &none      &kp EQUAL  &kp LA(LS(N2))        &kp PLUS   &kp LBRC   &kp HASH   &kp RBRC   &kp BSLH
-                              ESC_NUM    SYM_BSP    TAB_SFT               MIN_ARR    SPC_NAV    ENT_THU   
+        &kp GRAVE  &kp PLUS   &kp MINUS  &kp EQUAL  &kp LA(LS(N2))        &kp PLUS   &kp LBRC   &kp HASH   &kp RBRC   &kp BSLH
+                              ESC_NUM    SYM_BSP    ESC_SFT               ENT_ARR    SPC_NAV    &mo THU   
                         >;
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
@@ -40,16 +40,16 @@
                         bindings = <
         &none      &none      &none      &none      &none                 &kp COLON  &kp N7     &kp N8     &kp N9     &kp N0 
         &none      N_CUT      N_COPY     N_PASTE    S_PASTE               &kp DOT    &kp N4     &kp N5     &kp N6     &kp FSLH 
-        &none      &none      &none      &none      &none                 &kp PLUS   &kp N1     &kp N2     &kp N3     &kp ASTRK
-                              &trans     &trans     &trans                &trans     &trans     &trans
+        &none      &none      &kp MINUS  &kp EQUAL  &none                 &kp PLUS   &kp N1     &kp N2     &kp N3     &kp ASTRK
+                              &trans     &trans     &trans                &trans     &trans     &mo THU
                         >;
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
 
                 nav_layer {
                         bindings = <
-        BT0        BT1        BT2        BT3        BT_CLEAR              &none      &kp HOME   &kp UP     &kp END    &none
-        &none      N_CUT      N_COPY     N_PASTE    S_PASTE               &none      &kp LEFT   &kp DOWN   &kp RIGHT  &none
+        BT0        BT1        BT2        BT3        BT_CLEAR              &none      &kp HOME   &kp UP     &kp END    ZOOM_MIC
+        &none      N_CUT      N_COPY     N_PASTE    S_PASTE               &none      &kp LEFT   &kp DOWN   &kp RIGHT  ZOOM_VID
         &none      &none      SCR_CAP    &none      &none                 P_HIST     P_TAB      N_WIND     N_TAB      N_HIST
                               &kp C_MUTE &kp DEL    &trans                &trans     &trans     &trans
                         >;
@@ -61,7 +61,7 @@
         ARR_1_6    ARR_2_6    A_FULLSCR  ARR_5_6    ARR_6_6               &none      TOP_LEFT   TOP_1_2    TOP_RIGHT  &none
         LEFT_1_3   LEFT_2_3   MID_1_3    RIGHT_2_3  RIGHT_1_3             P_SCREEN   LEFT_1_2   BOT_1_2    RIGHT_1_2  N_SCREEN
         LEFT_5_6   ARR_3_6    A_CENTRE   ARR_4_6    RIGHT_5_6             &none      BOT_LEFT   A_RESTORE  BOT_RIGHT  &none
-                              ESC_NUM    &trans     &trans                &trans     &trans     ENT_THU
+                              &trqns     &trans     &trans                &trans     &trans     ENT_&mo THU
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };

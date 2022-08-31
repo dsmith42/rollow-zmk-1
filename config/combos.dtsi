@@ -7,42 +7,42 @@
     combos {
         compatible = "zmk,combos";
 
-        // N E
+        // BSPC = N E
         combo_bspc {
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&kp BSPC>;
         };
 
-        // N I
+        // DEL = N I
         combo_del {
             timeout-ms = <50>;
             key-positions = <16 18>;
             bindings = <&kp DEL>;
         };
 
-        // , .
+        // ENTER = , .
         combo_ret {
             timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&kp RET>;
         };
 
-        // F P
+        // ESC = F P
         combo_esc {
             timeout-ms = <50>;
             key-positions = <2 3>;
             bindings = <&kp ESC>;
         };
 
-        // X V
+        // CAPS = X V
         combo_caps {
             timeout-ms = <50>;
             key-positions = <21 23>;
             bindings = <&caps_ht CAPS 0>;
         };
 
-        // C V
+        // MINUS = C V
         combo_min {
             timeout-ms = <50>;
             key-positions = <22 23>;
