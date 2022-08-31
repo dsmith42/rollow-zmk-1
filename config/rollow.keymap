@@ -58,9 +58,9 @@
                 nav_layer {
                         bindings = <
         BT0       BT1       BT2       BT3       BT_CLEAR          &none     &kp HOME  &kp UP    &kp END   &none
-        &none     &none     &none     &none     &none             &none     &kp LEFT  &kp DOWN  &kp RIGHT &none
+        &none     CUT       COPY      PASTE     S_PASTE           &none     &kp LEFT  &kp DOWN  &kp RIGHT &none
         &none     &none     SCR_CAP   &none     &none             P_HIST    P_TAB     N_WIND    N_TAB     N_HIST
-                            &kp C_MUTE  &kp DEL   &none             &none     &none     &none
+                            &kp C_MUTE  &kp DEL &trans            &trans    &trans    &trans
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };

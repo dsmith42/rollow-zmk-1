@@ -32,6 +32,10 @@
 #define N_TAB &kp LG(LS(RBKT))
 #define N_WIND &kp LG(GRAVE)
 #define SCR_CAP &kp LG(LS(N5))
+#define CUT &kp LG(X)
+#define COPY &kp LG(C)
+#define PASTE &kp LG(P)
+#define S_PASTE &kp LG(LS(P))
 
 //homerow
 #define HM_A &hm_asemi LGUI A
