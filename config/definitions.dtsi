@@ -1,6 +1,6 @@
 #include "homerow.dtsi"
 
-// layers
+// Layers
 #define MAIN 0
 #define SYM 1
 #define NUM 2
@@ -18,7 +18,7 @@
 #define ALT_Y &hm_wy LALT Y
 #define CTL_SEMI &hm_qsemi LCTRL SEMI
 
-// layer shortcuts
+// Layer tap hold shortcuts
 #define ESC_NUM &th_ht NUM ESC
 #define SYM_BSP &th_ht SYM BSPC
 #define TAB_NUM &th_ht NUM TAB
@@ -40,19 +40,7 @@
 #define ZOOM_MIC &kp LG(LS(A))
 #define ZOOM_VID &kp LG(LS(V))
 
-//homerow
-#define HM_A &hm_asemi LGUI A
-#define HM_S &hm_sl LALT S
-#define HM_D &hm_dk LCTRL D
-#define HM_F &hm_fj LSHFT F
-#define HM_G &hm_gh ACC G
-#define HM_SEMI &hm_asemi LGUI SEMI
-#define HM_L &hm_sl LALT L
-#define HM_K &hm_dk LCTRL K
-#define HM_J &hm_fj LSHFT J
-#define HM_H &hm_gh ACC H
-
-//bluetooth
+// Bluetooth
 #define BT0 &bt BT_SEL 0 
 #define BT1 &bt BT_SEL 1 
 #define BT2 &bt BT_SEL 2 
@@ -60,7 +48,7 @@
 #define BT4 &bt BT_SEL 4 
 #define BT_CLEAR &bt BT_CLR
 
-// Arrange
+// Arrange (Magnet app shortcuts)
 // 1/3s
 #define LEFT_1_3 &kp LC(LA(D))
 #define MID_1_3 &kp LC(LA(F))
