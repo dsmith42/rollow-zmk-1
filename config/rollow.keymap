@@ -28,10 +28,10 @@
                 
                 sym_layer {
                         bindings = <
-   &trans       &trans     &kp EQUAL &kp AMPS  &degr      &kp PIPE &kp HASH  &kp LBRC &kp RBRC  &trans
-   &trans       &kp TILDE  &kp STAR  &kp GRAVE &kp SQT    &kp AT   &kp EXCL  &kp LBKT &kp RBKT  &kp DLLR
-   &trans       &trans     &kp PRCNT &kp CARET &kp MINUS  &kp PLUS &kp EQUAL &kp LPAR &kp RPAR  &kp BSLH
-                           &trans    &trans    &trans     &kp UNDER &mo NAV  &trans
+        &kp EXCL  &kp AT    &kp ASTRK &kp AMP   &kp PIPE          &kp PIPE  &kp LBKT  &kp CARET &kp RBKT  &kp COLON
+        &kp TILDE &kp LT    &kp PRCNT &kp GT    &kp LA(N3)        &kp QMARK &kp LPAR  &kp DLLR  &kp RPAR  &kp FSLH
+        &kp GRAVE &kp PLUS  &none     &kp EQUAL &kp LA(LS(N2))    &kp PLUS  &kp LBRC  &kp HASH  &kp RBRC  &kp BSLH
+                            ESC_NUM   SYM_BSP   TAB_SFT           MIN_ARR   SPC_NAV   ENT_THU   
                         >;
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
                 };
