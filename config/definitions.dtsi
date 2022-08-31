@@ -37,6 +37,8 @@
 #define N_COPY &kp LG(C)
 #define N_PASTE &kp LG(P)
 #define S_PASTE &kp LG(LS(P))
+#define ZOOM_MIC &kp LG(LS(A))
+#define ZOOM_VID &kp LG(LS(V))
 
 //homerow
 #define HM_A &hm_asemi LGUI A
