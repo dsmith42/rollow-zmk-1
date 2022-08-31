@@ -5,6 +5,13 @@
 #define ACC 3
 #define NAV 4
 
+// layer shortcuts
+#define ESC_NUM &th_ht NUM ESC
+#define SYM_BSP &th_ht SYM BSP
+#define TAB_SFT &mt LSHFT TAB
+#define MIN_ARR &lt ARR MINUS
+#define SPC_NAV &lt NAV SPC_NAV
+
 //homerow
 #define HM_A &hm_asemi LGUI A
 #define HM_S &hm_sl LALT S
