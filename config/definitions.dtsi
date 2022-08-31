@@ -6,6 +6,7 @@
 #define NUM 2
 #define NAV 3
 #define ARR 4
+#define THU 5
 
 // Home modifiers
 #define CTL_Q &hm_qsemi LCTRL Q
@@ -23,7 +24,7 @@
 #define TAB_SFT &th_ht LSHFT TAB
 #define MIN_ARR &th_ht ARR MINUS
 #define SPC_NAV &th_ht NAV SPACE
-#define ENT_THU &th_ht ARR ENTER
+#define ENT_THU &th_ht THU ENTER
 
 // Nav shortcuts
 #define P_HIST &kp LG(RBKT)
@@ -32,9 +33,9 @@
 #define N_TAB &kp LG(LS(RBKT))
 #define N_WIND &kp LG(GRAVE)
 #define SCR_CAP &kp LG(LS(N5))
-#define CUT &kp LG(X)
-#define COPY &kp LG(C)
-#define PASTE &kp LG(P)
+#define N_CUT &kp LG(X)
+#define N_COPY &kp LG(C)
+#define N_PASTE &kp LG(P)
 #define S_PASTE &kp LG(LS(P))
 
 //homerow
@@ -91,3 +92,9 @@
 #define P_SCREEN &kp LC(LA(LG(LEFT)))
 #define N_SCREEN &kp LC(LA(LG(RIGHT)))
 #define A_RESTORE &kp LC(LA(BSPC))
+
+// Thumb layer
+#define INPUT_LANG &kp LG(LC(LA(SPACE)))
+#define TXT_PLUS &kp LG(EQUAL)
+#define TXT_MINUS &kp LG(MINUS)
+#define EMOJI &kp LG(LC(SPACE))
