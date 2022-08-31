@@ -25,6 +25,7 @@
 #define MIN_ARR &th_ht ARR MINUS
 #define SPC_NAV &th_ht NAV SPACE
 #define ENT_THU &th_ht THU ENTER
+#define NUM_D &th_ht NUM D
 
 // Nav shortcuts
 #define P_HIST &kp LG(LBKT)
