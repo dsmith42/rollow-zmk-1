@@ -30,7 +30,7 @@
  *      |         |          |          |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
  *                           |    NUM   |   BSP    |   TAB    |         |    -     |  Space   |  Enter   |
- *                           |----------|   SYM    |   NUM    |         |   Arr    |   NAV    |----------|
+ *                           |----------|   SYM    |   SFT    |         |   Arr    |   NAV    |----------|
  *                           |    Up    |---------------------'         `---------------------|  Right   |
  *                           |   Down   |                                                     |  Left    |
  *                           `----------'                                                     `----------'
@@ -39,7 +39,7 @@
         CTL_Q      ALT_W      CMD_F      &kp P      &kp G               &kp J      &kp L      CMD_U      ALT_Y      CTL_SEMI
         &kp A      &kp R      &kp S      SFT_T      &kp D               &kp H      SFT_N      &kp E      &kp I      &kp O
         &kp Z      &kp X      &kp C      &kp V      &kp B               &kp K      &kp M      &kp COMMA  &kp DOT    &kp SQT
-                              ESC_NUM    SYM_BSP    TAB_NUM             MIN_ARR    SPC_NAV    ENT_THU
+                              ESC_NUM    SYM_BSP    TAB_SFT             MIN_ARR    SPC_NAV    ENT_THU
                         >;
                         sensor-bindings = <
                                  &inc_dec_kp DOWN UP                    &inc_dec_kp RIGHT LEFT
