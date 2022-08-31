@@ -27,8 +27,8 @@
 #define ENT_THU &th_ht THU ENTER
 
 // Nav shortcuts
-#define P_HIST &kp LG(RBKT)
-#define N_HIST &kp LG(LBKT)
+#define P_HIST &kp LG(LBKT)
+#define N_HIST &kp LG(RBKT)
 #define P_TAB &kp LG(LS(LBKT))
 #define N_TAB &kp LG(LS(RBKT))
 #define N_WIND &kp LG(GRAVE)
