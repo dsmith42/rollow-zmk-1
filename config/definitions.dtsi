@@ -21,7 +21,7 @@
 // layer shortcuts
 #define ESC_NUM &th_ht NUM ESC
 #define SYM_BSP &th_ht SYM BSPC
-#define TAB_SFT &th_ht LSHFT TAB
+#define TAB_SFT &mt LSHFT TAB
 #define MIN_ARR &th_ht ARR MINUS
 #define SPC_NAV &th_ht NAV SPACE
 #define ENT_THU &th_ht THU ENTER
