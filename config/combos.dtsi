@@ -21,13 +21,6 @@
             bindings = <&kp DEL>;
         };
 
-        // M ,
-        combo_sqt {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&kp SQT>;
-        };
-
         // , .
         combo_ret {
             timeout-ms = <50>;
