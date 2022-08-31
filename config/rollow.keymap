@@ -43,7 +43,7 @@
         &none      &none      &kp MINUS  &kp EQUAL  &none                 &kp PLUS   &kp N1     &kp N2     &kp N3     &kp ASTRK
                               &trans     &trans     &trans                &trans     &trans     &trans
                         >;
-                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
+                        sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp PG_UP PG_DN>;
                 };
 
                 nav_layer {
