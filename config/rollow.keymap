@@ -61,8 +61,8 @@
  *      -------------------------------------------------------         --------------------------------------------------------
  *                           |    NUM   |   BSP    |   TAB    |         |    -     |  Space   |  Enter   |
  *                           |----------|   SYM    |   NUM    |         |   Arr    |   NAV    |----------|
- *                           |    Up    |---------------------'         `---------------------|  Right   |
- *                           |   Down   |                                                     |  Left    |
+ *                           |    Up    |---------------------'         `---------------------| Page Up  |
+ *                           |   Down   |                                                     | Page Down|
  *                           `----------'                                                     `----------'
  **/
  
@@ -72,7 +72,7 @@
                               &trans     &trans     &trans              &trans     &trans     &trans
                         >;
                         sensor-bindings = <
-                                &inc_dec_kp DOWN UP                     &inc_dec_kp RIGHT LEFT
+                                &inc_dec_kp DOWN UP                     &inc_dec_kp PAGE_UP PAGE_DOWN
                         >;
                 };
 
