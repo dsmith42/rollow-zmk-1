@@ -57,11 +57,12 @@
 
                 nav_layer {
                         bindings = <
-   BT0        BT1        BT2        BT3       &bt BT_CLR  &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans
-   &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT &trans      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
-   &trans     &trans     &trans     &trans    &trans      &trans    &trans    &trans    &trans    &trans
-                         &trans     &trans    &trans      &trans    &trans    &trans
-                         >;
+        BT0       BT1       BT2       BT3       &bt BT_CLR        &none     &kp HOME  &kp UP    &kp END   &none
+        &none     &none     &none     &none     &none             &none     &kp LEFT  &kp DOWN  &kp RIGHT &none
+        &none     &none     SCR_CAP   &none     &none             P_HIST    P_TAB     N_WIND    N_TAB     N_HIST
+                            &kp MUTE  &kp DEL   &none             &none     &none     &none
+                        >;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };
         };
 };

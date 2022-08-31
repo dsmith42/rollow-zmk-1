@@ -15,6 +15,14 @@
 #define SPC_NAV &th_ht NAV SPACE
 #define ENT_THU &th_ht ACC ENTER
 
+// Nav shortcuts
+#define P_HIST &kp LG(RBKT)
+#define N_HIST &kp LG(LBKT)
+#define P_TAB &kp LG(LS(LBKT))
+#define N_TAB &kp LG(LS(RBKT))
+#define N_WIND &kp LG(GRAVE)
+#define SCR_CAP &kp LG(LS(N5))
+
 //homerow
 #define HM_A &hm_asemi LGUI A
 #define HM_S &hm_sl LALT S
