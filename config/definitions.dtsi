@@ -7,6 +7,16 @@
 #define ACC 3
 #define NAV 4
 
+// Home modifiers
+#define CTL_Q &hm_asemi LCTRL Q
+#define ALT_W &hm_sl LALT W
+#define CMD_F &hm_dk LGUI F
+#define SFT_T &hm_fj LSHFT T
+#define SFT_N &hm_fj LSHFT N
+#define CMD_U &hm_dk LGUI U
+#define ALT_Y &hm_sl LALT Y
+#define CTL_SEMI &hm_asemi LCTRL SEMI
+
 // layer shortcuts
 #define ESC_NUM &th_ht NUM ESC
 #define SYM_BSP &th_ht SYM BSPC
