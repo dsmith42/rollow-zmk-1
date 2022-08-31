@@ -126,8 +126,8 @@
  *                           `----------'                                                     `----------'
  **/
 
-        BT0        BT1        BT2        BT3        BT_CLEAR            ZOOM_MIC   &kp HOME   &kp UP     &kp END    PAGE_UP
-        &none      N_CUT      N_COPY     N_PASTE    S_PASTE             ZOOM_VID   &kp LEFT   &kp DOWN   &kp RIGHT  PAGE_DOWN
+        BT0        BT1        BT2        BT3        BT_CLEAR            ZOOM_MIC   &kp HOME   &kp UP     &kp END    &kp PAGE_UP
+        &none      N_CUT      N_COPY     N_PASTE    S_PASTE             ZOOM_VID   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN
         &none      &none      SCR_CAP    &none      &none               P_HIST     P_TAB      N_WIND     N_TAB      N_HIST
                               &kp C_MUTE &kp DEL    &trans              &trans     &trans     &trans
                         >;
