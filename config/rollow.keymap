@@ -66,14 +66,14 @@
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
                 };
 
-//                thu_layer {
-//                        bindings = <
-//        &trans     &trans     &trans     &trans     &trans                &trans     INPUT_LANG &trans     &trans     TXT_PLUS
-//        &trans     &trans     &trans     &trans     &trans                &trans     &kp CAPS   EMOJI      &trans     TXT_MINUS
-//        &trans     &trans     &trans     &trans     &trans                &trans     &trans     &trans     &trans     &trans
-//                              ESC_NUM    &trans     &trans                &trans     &trans     ENT_THU
-//                        >;
-//                        sensor-bindings = <&inc_dec_kp TXT_PLUS TXT_MINUS &inc_dec_kp RIGHT LEFT>;
-//                };
+                thu_layer {
+                        bindings = <
+        &trans     &trans     &trans     &trans     &trans                &trans     &trans     &trans     &trans     &trans
+        &trans     &trans     &trans     &trans     &trans                &trans     &trans     &trans     &trans     &trans
+        &trans     &trans     &trans     &trans     &trans                &trans     &trans     &trans     &trans     &trans
+                              &trans     &trans     &trans                &trans     &trans     &trans
+                        >;
+                        sensor-bindings = <&inc_dec_kp TXT_PLUS TXT_MINUS C_VOL_DN &inc_dec_kp RIGHT LEFT>;
+                };
         };
 };
