@@ -87,8 +87,8 @@
 #define BOT_LEFT &kp LC(LA(J))
 #define BOT_RIGHT &kp LC(LA(K))
 // Other
-#define FULLSCR &kp LC(LA(ENTER))
-#define CENTRE &kp LC(LA(C))
+#define A_FULLSCR &kp LC(LA(ENTER))
+#define A_CENTRE &kp LC(LA(C))
 #define P_SCREEN &kp LC(LA(LG(LEFT)))
 #define N_SCREEN &kp LC(LA(LG(RIGHT)))
-#define RESTORE &kp LC(LA(BSPC))
+#define A_RESTORE &kp LC(LA(BSPC))
