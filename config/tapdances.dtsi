@@ -5,7 +5,7 @@
             label = "COPY_CUT";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <LG(C)>, <LG(X)>;
+            bindings = <&kp LG(C)>, <&kp LG(X)>;
         };
 
         cc_cv: cc_cv {
