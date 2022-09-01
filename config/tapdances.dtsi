@@ -1,5 +1,13 @@
 / {
     behaviors {
+        copy_cut: copy_cut {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COPY_CUT";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <LG(C)>, <LG(X)>;
+        };
+
         cc_cv: cc_cv {
         compatible = "zmk,behavior-hold-tap";
         label = "CC_CV";
