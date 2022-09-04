@@ -1,23 +1,16 @@
 / {
     behaviors {
-        copy_cut: copy_cut {
-            compatible = "zmk,behavior-tap-dance";
-            label = "COPY_CUT";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp LG(C)>, <&kp LG(X)>;
+        cc_cv: cc_cv {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CC_CV";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
         };
 
-        cc_cv: cc_cv {
-        compatible = "zmk,behavior-hold-tap";
-        label = "CC_CV";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick-tap-ms = <0>;
-        flavor = "tap-preferred";
-        global-quick-tap;
-        bindings = <&kp>, <&kp>;
-        };
         ca_cc_cv: ca_cc_cv {
             compatible = "zmk,behavior-tap-dance";
             label = "CA_CC_CV";
@@ -25,6 +18,7 @@
             tapping-term-ms = <100>;
             bindings = <&cc_cv LC(V) LC(C)>, <&kp LC(A)>;
         };
+
         nxt_prv: nxt_prv {
             compatible = "zmk,behavior-tap-dance";
             label = "NXT_PRV";
@@ -32,6 +26,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp C_NEXT>, <&kp C_PREV>;
         };
+
         cacaps: cacaps {
             compatible = "zmk,behavior-tap-dance";
             label = "CACAPS";
@@ -39,15 +34,16 @@
             tapping-term-ms = <200>;
             bindings = <&caps_word>, <&kp CAPS>;
         };
+
         caps_ht: caps_ht {
-        compatible = "zmk,behavior-hold-tap";
-        label = "caps_ht";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick-tap-ms = <0>;
-        flavor = "tap-preferred";
-        global-quick-tap;
-        bindings = <&kp>, <&caps_word>;
+            compatible = "zmk,behavior-hold-tap";
+            label = "caps_ht";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            global-quick-tap;
+            bindings = <&kp>, <&caps_word>;
         };
     };
 };

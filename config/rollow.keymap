@@ -83,10 +83,10 @@
  *      |         |          |          |          |          |         |    :     |    7     |    8     |    9     |    0     |
  *      |         |          |          |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
- *      |         |          |   Copy   |  Paste   |          |         |    .     |    4     |    5     |    6     |    /     |
- *      |         |          |   Cut 2x |          |          |         |          |          |          |          |          |
+ *      |         |          |          |          |          |         |    .     |    4     |    5     |    6     |    /     |
+ *      |         |          |          |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
- *      |         |          |    -     |    =     |          |         |    +     |    1     |    2     |    3     |    *     |
+ *      |         |   CUT    |   COPY   |  PASTE   |          |         |    +     |    1     |    2     |    3     |    *     |
  *      |         |          |          |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
  *                           |    NUM   |   BSP    |   TAB    |         |    -     |    0     |  Enter   |
@@ -97,8 +97,8 @@
  **/
  
         &none      &none      &none      &none      &none               &kp COLON  &kp N7     &kp N8     &kp N9     &kp N0 
-        &none      &none      &copy_cut  N_PASTE    &none               &kp DOT    &kp N4     &kp N5     &kp N6     &kp FSLH 
-        &none      &none      &kp MINUS  &kp EQUAL  &none               &kp PLUS   &kp N1     &kp N2     &kp N3     &kp ASTRK
+        &none      &none      &none      &none      &none               &kp DOT    &kp N4     &kp N5     &kp N6     &kp FSLH 
+        &none      N_CUT      N_COPY     N_PASTE    &none               &kp PLUS   &kp N1     &kp N2     &kp N3     &kp ASTRK
                               &trans     &trans     &trans              &trans     &kp N0     &trans
                         >;
                         sensor-bindings = <
@@ -113,8 +113,8 @@
  *      |         |          |          |          |          |         |  Zoom    |   Home   |    Up    |   End    | Page Up  |
  *      |         |          |          |          |          |         |  Mic     |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
- *      |         |          |   Copy   |  Paste   | S Paste  |         |  Zoom    |   Left   |   Down   |  Right   | Page Dn  |
- *      |         |          |  2x Cut  |          |          |         |  Video   |          |          |          |          |
+ *      |         |          |          |          |          |         |  Zoom    |   Left   |   Down   |  Right   | Page Dn  |
+ *      |         |          |          |          |          |         |  Video   |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
  *      |         |          |  Screen  |          |          |         |  Prev    |   Prev   |   Next   |  Next    |   Next   |
  *      |         |          | Capture  |          |          |         | History  |   Tab    | Window   |  Tab     |  History |
@@ -127,7 +127,7 @@
  **/
 
         &none      &none      &none      &none      &none               ZOOM_MIC   &kp HOME   &kp UP     &kp END    &kp PAGE_UP
-        &none      &none      &copy_cut  N_PASTE    S_PASTE             ZOOM_VID   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN
+        &none      &none      &none      &none      &none               ZOOM_VID   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN
         &none      &none      SCR_CAP    &none      &none               P_HIST     P_TAB      N_WIND     N_TAB      N_HIST
                               &kp C_MUTE &kp DEL    &trans              &trans     SPC_NAV     &trans
                         >;
