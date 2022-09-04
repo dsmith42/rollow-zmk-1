@@ -91,5 +91,5 @@
 #define EMOJI &kp LG(LC(SPACE))
 
 // Xcode shortcuts
-#define LINE_UP &kp LG(LC(LBRC))
-#define LINE_DN &kp LG(LC(RBRC))
+#define LINE_UP &kp LG(LA(LBKT))
+#define LINE_DN &kp LG(LA(RBKT))
