@@ -83,10 +83,10 @@
  *      |         |          |          |          |          |         |    :     |    7     |    8     |    9     |    0     |
  *      |         |          |          |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
- *      |         |          |          |          |          |         |    .     |    4     |    5     |    6     |    /     |
+ *      |         |   CUT    |   COPY   |  PASTE   |          |         |    .     |    4     |    5     |    6     |    /     |
  *      |         |          |          |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
- *      |         |   CUT    |   COPY   |  PASTE   |          |         |    +     |    1     |    2     |    3     |    *     |
+ *      |  NUM    |          |          |          |          |         |    +     |    1     |    2     |    3     |    *     |
  *      |         |          |          |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
  *                           |    NUM   |   BSP    |   TAB    |         |    -     |    0     |  Enter   |
@@ -97,8 +97,8 @@
  **/
  
         &none      &none      &none      &none      &none               &kp COLON  &kp N7     &kp N8     &kp N9     &kp N0 
-        &none      &none      &none      &none      &none               &kp DOT    &kp N4     &kp N5     &kp N6     &kp FSLH 
-        &none      N_CUT      N_COPY     N_PASTE    &none               &kp PLUS   &kp N1     &kp N2     &kp N3     &kp ASTRK
+        &none      N_CUT      N_COPY     N_PASTE    &none               &kp DOT    &kp N4     &kp N5     &kp N6     &kp FSLH 
+        &none      &none      &none      &none      &none               &kp PLUS   &kp N1     &kp N2     &kp N3     &kp ASTRK
                               &trans     &trans     &trans              &trans     &kp N0     &trans
                         >;
                         sensor-bindings = <
