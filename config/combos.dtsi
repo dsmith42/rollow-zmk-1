@@ -35,6 +35,13 @@
             bindings = <&kp ESC>;
         };
 
+        // exp ESC = A R
+        compo_aresc {
+            timeout-ms = <40>;
+            key-positions = <10 11>;
+            bindings = <&kp ESC>;
+        };
+
         // CAPS = X V
         combo_caps {
             timeout-ms = <50>;

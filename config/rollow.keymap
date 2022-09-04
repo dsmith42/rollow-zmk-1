@@ -24,7 +24,7 @@
  *      |  CTRL   |   ALT    |   CMD    |          |          |         |          |          |   CMD    |   ALT    |   CTRL   |
  *      -------------------------------------------------------         --------------------------------------------------------
  *      |   A     |    R     |    S     |    T     |    D     |         |    H     |    N     |    E     |    I     |    O     |
- *      |         |          |          |  Shift   |   NUM    |         |          |  Shift   |          |          |          |
+ *      |  NUM    |          |          |  Shift   |          |         |          |  Shift   |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
  *      |   Z     |    X     |    C     |    V     |    B     |         |    K     |    M     |    ,     |    .     |    '     |
  *      |         |          |          |          |          |         |          |          |          |          |          |
@@ -83,7 +83,7 @@
  *      |         |          |          |          |          |         |    :     |    7     |    8     |    9     |    0     |
  *      |         |          |          |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
- *      |         |   Cut    |   Copy   |  Paste   |          |         |    .     |    4     |    5     |    6     |    /     |
+ *      |         |          |   Copy   |  Paste   |          |         |    .     |    4     |    5     |    6     |    /     |
  *      |         |          |   Cut 2x |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
  *      |         |          |    -     |    =     |          |         |    +     |    1     |    2     |    3     |    *     |
@@ -97,7 +97,7 @@
  **/
  
         &none      &none      &none      &none      &none               &kp COLON  &kp N7     &kp N8     &kp N9     &kp N0 
-        &none      N_CUT      &copy_cut  N_PASTE    &none               &kp DOT    &kp N4     &kp N5     &kp N6     &kp FSLH 
+        &none      &none      &copy_cut  N_PASTE    &none               &kp DOT    &kp N4     &kp N5     &kp N6     &kp FSLH 
         &none      &none      &kp MINUS  &kp EQUAL  &none               &kp PLUS   &kp N1     &kp N2     &kp N3     &kp ASTRK
                               &trans     &trans     &trans              &trans     &kp N0     &trans
                         >;
@@ -110,26 +110,26 @@
                         bindings = <
 /**
  *      ,-----------------------------------------------------.         .------------------------------------------------------.
- *      |  BT 0   |  BT 1    |   BT 2   |   BT 3   | BT Clear |         |  Zoom    |   Home   |    Up    |   End    | Page Up  |
+ *      |         |          |          |          |          |         |  Zoom    |   Home   |    Up    |   End    | Page Up  |
  *      |         |          |          |          |          |         |  Mic     |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
- *      |         |   Cut    |   Copy   |  Paste   | S Paste  |         |  Zoom    |   Left   |   Down   |  Right   | Page Dn  |
- *      |         |          |          |          |          |         |  Video   |          |          |          |          |
+ *      |         |          |   Copy   |  Paste   | S Paste  |         |  Zoom    |   Left   |   Down   |  Right   | Page Dn  |
+ *      |         |          |  2x Cut  |          |          |         |  Video   |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
- *      |   Z     |    X     |  Screen  |    V     |    B     |         |  Prev    |   Prev   |   Next   |  Next    |   Next   |
+ *      |         |          |  Screen  |          |          |         |  Prev    |   Prev   |   Next   |  Next    |   Next   |
  *      |         |          | Capture  |          |          |         | History  |   Tab    | Window   |  Tab     |  History |
  *      -------------------------------------------------------         --------------------------------------------------------
  *                           |  Mute    |   Del    |   TAB    |         |    -     |  Space   |  Enter   |
- *                           |----------|          |   SFT    |         |   Arr    |   NAV    |----------|
+ *                           |----------|   FUN    |   SFT    |         |   Arr    |   NAV    |----------|
  *                           |  Vol +   |---------------------'         `---------------------|  Right   |
  *                           |  Vol -   |                                                     |  Left    |
  *                           `----------'                                                     `----------'
  **/
 
-        BT0        BT1        BT2        BT3        BT_CLEAR            ZOOM_MIC   &kp HOME   &kp UP     &kp END    &kp PAGE_UP
-        &none      N_CUT      &copy_cut  N_PASTE    S_PASTE             ZOOM_VID   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN
+        &none      &none      &none      &none      &none               ZOOM_MIC   &kp HOME   &kp UP     &kp END    &kp PAGE_UP
+        &none      &none      &copy_cut  N_PASTE    S_PASTE             ZOOM_VID   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN
         &none      &none      SCR_CAP    &none      &none               P_HIST     P_TAB      N_WIND     N_TAB      N_HIST
-                              &kp C_MUTE &kp DEL    &trans              &trans     &trans     &trans
+                              &kp C_MUTE &kp DEL    &trans              &trans     SPC_NAV     &trans
                         >;
                         sensor-bindings = <
                                 &inc_dec_kp C_VOL_UP C_VOL_DN           &inc_dec_kp RIGHT LEFT
@@ -149,7 +149,7 @@
  *      | L 5/6th |  3/6th   |  Centre  |  4/6th   | R 5/6th  |         |          |  Bottom  |  Bottom  |  Bottom  |          |
  *      |         |          |          |          |          |         |          |  Left    |  Half    |  Right   |          |
  *      -------------------------------------------------------         --------------------------------------------------------
- *                           |  Mute    |   Del    |   TAB    |         |    -     |  Space   |  Enter   |
+ *                           |  Mute    |   FUN    |   TAB    |         |    -     |  Space   |  Enter   |
  *                           |----------|          |   SFT    |         |   Arr    |   NAV    |----------|
  *                           |  Vol +   |---------------------'         `---------------------|  Right   |
  *                           |  Vol -   |                                                     |  Left    |
@@ -170,24 +170,24 @@
                         bindings = <
 /**
  *      ,-----------------------------------------------------.         .------------------------------------------------------.
- *      |         |          |          |          |          |         |          |  Input   |          |          |  Text +  |
+ *      |  BT 0   |  BT 1    |   BT 2   |   BT 3   | BT Clear |         |          |  Input   |          |          |  Text +  |
  *      |         |          |          |          |          |         |          | Language |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
- *      |         |          |          |          |          |         |          | Capslock |  EMOJI   |          |  Text -  |
+ *      |         |          |          |          |          |         |          |          |  EMOJI   |          |  Text -  |
  *      |         |          |          |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
  *      |         |          |          |          |          |         |          |          |          |          |          |
  *      |         |          |          |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
- *                           |  Mute    |   Del    |   TAB    |         |    -     |  Space   |  Enter   |
- *                           |----------|          |   SFT    |         |   Arr    |   NAV    |----------|
- *                           |  Vol +   |---------------------'         `---------------------|  Right   |
- *                           |  Vol -   |                                                     |  Left    |
+ *                           |          |          |          |         |          |          |          |
+ *                           |----------|          |          |         |          |          |----------|
+ *                           |          |---------------------'         `---------------------|          |
+ *                           |          |                                                     |          |
  *                           `----------'                                                     `----------'
  **/
 
-        &trans     &trans     &trans     &trans     &trans              &trans     INPUT_LANG &trans     &trans     TXT_PLUS
-        &trans     &trans     &trans     &trans     &trans              &trans     &kp CAPS   EMOJI      &trans     TXT_MINUS
+        BT0        BT1        BT2        BT3        BT_CLEAR            &trans     INPUT_LANG &trans     &trans     TXT_PLUS
+        &trans     &trans     &trans     &trans     &trans              &trans     &trans     EMOJI      &trans     TXT_MINUS
         &trans     &trans     &trans     &trans     &trans              &trans     &trans     &trans     &trans     &trans
                               &trans     &trans     &trans              &trans     &trans     &trans
                         >;
