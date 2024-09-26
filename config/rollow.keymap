@@ -29,20 +29,20 @@
  *      |   Z     |    X     |    C     |    V     |    B     |         |    K     |    M     |    ,     |    .     |    '     |
  *      |  NUM    |          |          |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
- *                           |    NUM   |   BSP    |   TAB    |         |    -     |  Space   |  Enter   |
+ *                           |   Mute   |   BSP    |   TAB    |         |    -     |  Space   | ENT_THU  |
  *                           |----------|   SYM    |   SFT    |         |   Arr    |   NAV    |----------|
- *                           |    Up    |---------------------'         `---------------------|  Right   |
- *                           |   Down   |                                                     |  Left    |
+ *                           |   Vol +  |---------------------'         `---------------------|  Right   |
+ *                           |   Vol -  |                                                     |  Left    |
  *                           `----------'                                                     `----------'
  **/
 
         CTL_Q      ALT_W      CMD_F      &kp P      &kp G               &kp J      &kp L      CMD_U      ALT_Y      CTL_SEMI
         &kp A      &kp R      &kp S      SFT_T      &kp D               &kp H      SFT_N      &kp E      &kp I      &kp O
         NUM_Z      &kp X      &kp C      &kp V      &kp B               &kp K      &kp M      &kp COMMA  &kp DOT    &kp SQT
-                              ESC_NUM    SYM_BSP    TAB_SFT             MIN_ARR    SPC_NAV    ENT_THU
+                              &kp C_MUTE SYM_BSP    TAB_SFT             MIN_ARR    SPC_NAV    ENT_THU
                         >;
                         sensor-bindings = <
-                                 &inc_dec_kp DOWN UP                    &inc_dec_kp RIGHT LEFT
+                                &inc_dec_kp C_VOL_UP C_VOL_DN           &inc_dec_kp RIGHT LEFT
                         >;
                 };
                 
@@ -138,7 +138,7 @@
 
                 arr_layer {
                         bindings = <
-/**
+ /**
  *      ,-----------------------------------------------------.         .------------------------------------------------------.
  *      |  1/6th  |  2/6th   |  Full    |  5/6th   |  6/6th   |         |          |   Top    |   Top    |   Top    |          |
  *      |         |          |  Screen  |          |          |         |          |   Left   |   Half   |  Right   |          |
@@ -170,13 +170,13 @@
                         bindings = <
 /**
  *      ,-----------------------------------------------------.         .------------------------------------------------------.
- *      |  BT 0   |  BT 1    |   BT 2   |   BT 3   | BT Clear |         |          |  Input   |          |          |  Text +  |
+ *      | BT 0    |  BT 1    |   BT 2   |   BT 3   | BT NEXT  |         |          |  Input   |          |          |  Text +  |
  *      |         |          |          |          |          |         |          | Language |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
  *      |         |          |          |          |          |         |          |          |  EMOJI   |          |  Text -  |
  *      |         |          |          |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
- *      |         |          |          |          |          |         |          |          |          |          |          |
+ *      |         |          |          |          | BT Clear |         |          |          |          |          |          |
  *      |         |          |          |          |          |         |          |          |          |          |          |
  *      -------------------------------------------------------         --------------------------------------------------------
  *                           |          |          |          |         |          |          |          |
@@ -186,9 +186,9 @@
  *                           `----------'                                                     `----------'
  **/
 
-        BT0        BT1        BT2        BT3        BT_CLEAR            &trans     INPUT_LANG &trans     &trans     TXT_PLUS
+        BT0        BT1        BT2        BT3        BT_NEXT              &trans     INPUT_LANG &trans     &trans     TXT_PLUS
         &trans     &trans     &trans     &trans     &trans              &trans     &trans     EMOJI      &trans     TXT_MINUS
-        &trans     &trans     &trans     &trans     &trans              &trans     &trans     &trans     &trans     &trans
+        &trans     &trans     &trans     &trans     BT_CLEAR            &trans     &trans     &trans     &trans     &trans
                               &trans     &trans     &trans              &trans     &trans     &trans
                         >;
                 };
