@@ -19,12 +19,10 @@
 #define CTL_SEMI &hm_qsemi LCTRL SEMI
 
 // Layer tap hold shortcuts
-#define ESC_NUM &th_ht NUM ESC
-#define SYM_BSP &th_ht SYM BSPC
+#define BSP_SYM &th_ht SYM BSPC
 #define TAB_SFT &mt LSHFT TAB
 #define MIN_ARR &th_ht ARR MINUS
 #define SPC_NAV &th_ht NAV SPACE
-#define ENT_THU &th_ht THU ENTER
 #define NUM_Z &th_ht NUM Z
 
 // Nav shortcuts
@@ -42,12 +40,13 @@
 #define ZOOM_VID &kp LG(LS(V))
 
 // Bluetooth
-#define BT0 &bt BT_SEL 0 
-#define BT1 &bt BT_SEL 1 
-#define BT2 &bt BT_SEL 2 
-#define BT3 &bt BT_SEL 3 
-#define BT4 &bt BT_SEL 4 
+#define BT0 &bt BT_SEL 0
+#define BT1 &bt BT_SEL 1
+#define BT2 &bt BT_SEL 2
+#define BT3 &bt BT_SEL 3
+#define BT4 &bt BT_SEL 4
 #define BT_CLEAR &bt BT_CLR
+#define BT_CLEARA &bt BT_CLR_ALL
 
 // Arrange (Magnet app shortcuts)
 // 1/3s
